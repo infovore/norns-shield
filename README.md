@@ -17,6 +17,15 @@ see [https://llllllll.co/t/diy-norns-shield](https://llllllll.co/t/diy-norns-shi
 
 SMD-populated PCB available from [monome.org](https://market.monome.org)
 
+**200131 update:** tip/ring on audio IO are now swapped around. This will make
+left/right work as per the default, out of the box Norns image.
+
+If you are using an older shield than 200131, and want to reverse the audio routing
+such that panning works correctly, place an empty file called `reverse.txt` in the
+home directory on your norns. (Eg: SSH into norns, and type `touch
+reverse.txt`). Restart the norns engines from the UI, and you should have
+correct routing.
+
 ![](images/norns-shield.png)
 
 ![](images/norns-shield-side.jpg)
